@@ -1,0 +1,11 @@
+.sortable-header {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sortable-header:hover {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  

@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "6969:6969"
+    volumes:
+      - backend-db:/code
+    environment:
+      - NODE_ENV=production
+    links: 
+      - frontend
+    
+  frontend:
+    build: 
+      context: ./frontend
+      args:
+        - REACT_APP_BACKEND_IP=${REACT_APP_BACKEND_IP}
+    container_name: frontend
+    ports:
+      - "8080:80"
+
+volumes:
+ backend-db:

@@ -1,0 +1,10 @@
+{
+  "name": "pee-tracker",
+  "version": "1.0.0",
+  "description": "A toilet time tracker for the company",
+  "author": "3P",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
